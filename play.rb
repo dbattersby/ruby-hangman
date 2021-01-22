@@ -47,6 +47,12 @@ class Hangman
 
       if guess == "exit"
         puts "Thank you for playing!"
+        
+      #if guess is longer than 1 letter
+      elsif guess.length > 1
+        puts "only guess 1 letter at a time please!"
+          make_guess
+        
       elsif good_guess
         puts "You are correct!"
 
