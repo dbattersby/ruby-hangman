@@ -1,6 +1,6 @@
 class Hangman
   def initialize
-    @word = words.sample
+    @word = game_settings.sample
     @lives = 7
 
     @word_teaser = ''
@@ -9,7 +9,7 @@ class Hangman
     end
   end
 
-  def words
+  def game_settings
     [
       { word: 'jogging', hint: 'We are not walking...' },
       { word: 'celebrate', hint: 'Remembering special moments' },
